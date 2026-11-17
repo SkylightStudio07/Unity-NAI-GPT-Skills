@@ -7,6 +7,48 @@ Claude Code에서 게임 아트를 뽑을 때 쓰는 공용 스킬 두 개. 프�
 | `nai-image` | NovelAI Diffusion V5로 일러스트 · 배경 · 소품 · 스프라이트 생성. 투명 PNG, 캐릭터별 캡션, 타일링 지원 |
 | `codex-art-request` | 로컬 Codex 앱(GPT 이미지)으로 UI · VFX · 스프라이트를 목업 → 분절 두 단계로 받아 옴 |
 
+## 이 스킬로 만든 것
+
+### Dusk Princess and Twilight Prince ([AIGameHackaton](https://github.com/digital8150/AIGameHackaton))
+
+AI 게임 해커톤 출품작. 2D 플랫포머 퍼즐. **게임 안의 그림은 전부 이 스킬들로 만들었음**: 타이틀, 캐릭터 초상, 그림책 컷신, 원경 · 중경 · 전경 레이어, 스테이지 소품, UI.
+
+![타이틀 배경](showcase/hackathon/title_backdrop.jpg)
+
+| 공주 초상 | 왕자 초상 |
+|---|---|
+| <img src="showcase/hackathon/princess_portrait.png" height="320"> | <img src="showcase/hackathon/prince_portrait.png" height="320"> |
+
+| 그림책 프롤로그 | 그림책 에필로그 |
+|---|---|
+| ![프롤로그](showcase/hackathon/story_01.jpg) | ![에필로그](showcase/hackathon/epilogue_05.jpg) |
+
+| 감각 전환 (원경 · 중경 · 전경 레이어) | 메아리로 드러나는 숨은 발판 |
+|---|---|
+| ![감각 전환](showcase/hackathon/sense_switch.webp) | ![숨은 발판](showcase/hackathon/hidden_plank_prince.webp) |
+| ![빛 글자 다리](showcase/hackathon/word_bridge.webp) | ![그림책 컷신](showcase/hackathon/storybook.webp) |
+
+### Project-Vertex
+
+아니메풍 디스토피아 덱빌딩 로그라이크 (졸업 작품). 배경 · 캐릭터는 NAI, 화면 UI · 전투 이펙트는 GPT 목업 → 분절.
+
+| 로비 | 무기고 |
+|---|---|
+| ![로비](showcase/vertex/lobby.jpg) | ![무기고](showcase/vertex/armory.jpg) |
+| ![아카이브](showcase/vertex/archive.jpg) | ![휴식 캠프](showcase/vertex/rest_camp.jpg) |
+
+**GPT 목업 → 게임 적용** (작전 상황 화면, 요청서는 `examples/gpt-vertex/OperationStatus/`)
+
+| 목업 (`REQUEST.md`) | 분절 조각으로 조립한 실제 게임 화면 |
+|---|---|
+| ![목업](showcase/vertex/operation_status_mockup.jpg) | ![게임](showcase/vertex/operation_status_ingame.jpg) |
+
+**VFX 목업** (총구 섬광, 요청서는 `examples/gpt-vertex/MuzzleFlash/`)
+
+| 전투 장면 목업 | 섬광 변형 |
+|---|---|
+| ![섬광 목업](showcase/vertex/muzzle_flash_mockup.jpg) | ![섬광 변형](showcase/vertex/muzzle_flash_variants.jpg) |
+
 ## 설치 (새 PC / 노트북)
 
 1. 이 저장소를 사용자 스킬 폴더에 받음.
