@@ -1,0 +1,19 @@
+1girl, 
+
+0.2::artist:crimson comics::
+0.6::artist:dramz::, 
+0.5::artist:santa (sunflower)::, 
+1.0::artist:halcon::, 
+1.2::artist:yd (orange maru)::, 
+1.2::artist:kat (bu-kunn)::, 
+1.0::artist:momoya show-neko::, 
+
+
+year 2026, year 2025, 
+
+masterpiece, best quality, very aesthetic, highres, best illustration, 
+
+2.0:: anime coloring::, comic, doujinshi,  
+
+-1::multiple views::, -2::monochrome::, -3::official art, official style::, -1::artist collaboration, ::, -1::3d::, 
+

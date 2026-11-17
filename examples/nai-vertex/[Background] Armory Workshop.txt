@@ -1,0 +1,36 @@
+0.2::artist:crimson comics::
+0.6::artist:dramz::, 
+0.5::artist:santa (sunflower)::, 
+1.0::artist:halcon::, 
+1.2::artist:yd (orange maru)::, 
+1.2::artist:kat (bu-kunn)::, 
+1.0::artist:momoya show-neko::, 
+
+year 2026, year 2025, 
+
+masterpiece, best quality, very aesthetic, highres, best illustration, 
+
+2.0:: anime coloring::, comic, doujinshi,  
+
+-1::multiple views::, -2::monochrome::, -3::official art, official style::, -1::artist collaboration, ::, -1::3d::, -3::1girl, 1boy, human, person, character, animal::, -3::game ui, hud, text, menu panels, watermark, signature, windows, sky, outdoors, bright neon cyberpunk::,
+
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, breathtaking, 
+2.0::no humans, scenery, indoors, hyper-detailed tactical armory and gunsmith workshop interior::, 1.6::intricate mechanical details, dense workshop clutter, realistic anime background art::, wallpaper, wide shot, eye-level perspective,
+
+{{left side gunsmith workbench station}},
+{long industrial workbench on the left with a thick warm wooden tabletop, cluttered with a yellow-and-black cordless power drill, oil cans, small parts trays, and gun components},
+{{perforated metal pegboard wall above workbench}}, {neatly ordered row of metal spanner wrenches and pliers hanging by size on the left half of the pegboard}, {{white technical schematic blueprint diagram of an assault rifle pinned to the right half of the pegboard}},
+{two bright cool-white linear LED tube work lights mounted above the pegboard casting crisp light down onto the tools and wooden bench},
+{black round padded rolling workshop stool on metal caster wheels in front of the bench, dark grey multi-drawer metal tool cabinets underneath, stacked black military hard cases in the lower-left foreground},
+
+{{center and midground industrial armory bay}},
+{dark steel wire-mesh security cage partitions, grid racks, rolling metal tool carts, and stacked supply boxes in the center-back},
+{dark industrial ceiling with exposed steel beams, ventilation ducts, and recessed rectangular white LED ceiling lights},
+
+{{right side weapon storage racks}},
+{tall vertical gun racks along the right wall holding rows of black tactical assault rifles and marksman rifles standing upright barrel-up},
+{black tactical hard case in the lower-right foreground with a grey mechanic cloth draped over its edge, faded yellow hazard lines on floor},
+{dark polished concrete floor with textured metal diamond-plate floor mats in the center reflecting the overhead and workbench lights},
+atmospheric lighting, cinematic depth, cool charcoal-grey and gunmetal palette contrasted with the warm wooden benchtop,
+
+A hyper-detailed, wide-angle eye-level anime background illustration of an indoor near-future military armory and gunsmith maintenance workshop, with no humans present. On the left stands a long industrial workbench with a warm wooden butcher-block top holding a cordless drill, oil bottles, and small gun parts, with a round black rolling swivel stool in front of dark grey multi-drawer tool cabinets and stacked black tactical cases in the lower-left corner. Mounted on the wall above the bench, illuminated by two bright white linear LED tube lights, is a perforated metal pegboard displaying a neat row of hanging wrenches and pliers arranged by size alongside a pinned white technical schematic drawing of an assault rifle. In the center background stand dark steel wire-mesh cage partitions, shelving racks, and rolling tool carts beneath a dark ceiling of steel girders, ducts, and rectangular white LED lights. Along the right side, vertical gun racks hold rows of black tactical rifles standing upright, with a black equipment trunk draped with a grey shop rag in the lower-right foreground and a dark reflective concrete floor covered in textured metal floor plates at the center.

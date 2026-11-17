@@ -39,6 +39,41 @@ Claude Code에서 게임 아트를 뽑을 때 쓰는 공용 스킬 두 개. 프�
 
 화풍은 첫날 몇 장 뽑아 보고 `[Base Prompts].txt`에 고정해 두는 게 좋음. 그 뒤로는 에셋마다 화풍 단어를 따로 넣지 않음.
 
+## 참고 자료 (`examples/`)
+
+두 프로젝트에서 실제로 쓴 파일. 새 프로젝트를 시작할 때 형식을 그대로 베껴 쓰면 됨.
+
+- **Project-Vertex**: 아니메풍 디스토피아 덱빌딩 로그라이크 (Unity, uGUI)
+- **AIGameHackaton** (Dusk Princess and Twilight Prince): 세피아 동화책풍 2D 플랫포머 퍼즐 (Unity)
+
+| 경로 | 내용 |
+|---|---|
+| `examples/NAI_V5_Prompt_Guide.md` | NAI V5 문법 정리 (태그 + 자연어 배치, `{}` · `숫자::태그::` 가중치, `Text:` 글자 넣기, 눈매 고정). 5장은 Vertex 폴더 기준 |
+| `examples/nai-hackathon/` | `nai-image`가 그대로 읽는 섹션 형식의 완성 예. 화풍(Base) · 네거티브, 스테이지 소품(`03`), 원경 · 중경 · 전경 레이어와 UI(`04`), 캐릭터 둘이 나오는 그림책 장면(`07`, `@char` 사용) |
+| `examples/nai-vertex/` | Vertex 화풍(작가 배합) · 네거티브, 방 배경 한 장 파일(왼쪽 · 가운데 · 오른쪽 구역 블록 방식), 거점 소품 섹션 파일 |
+| `examples/gpt-vertex/UI_Mockup_Split_Workflow.md` | 목업 → 분절 방식의 원본 문서 (`codex-art-request/references/workflow.md`는 이걸 일반화한 것) |
+| `examples/gpt-vertex/OperationStatus/` | UI 화면 하나의 `REQUEST.md` + `SPLIT_REQUEST.md` 짝 |
+| `examples/gpt-vertex/MuzzleFlash/` | VFX(총구 섬광 · 연기)의 `REQUEST.md` + `SPLIT_REQUEST.md` 짝. 게임에서 어떻게 재생되는지부터 적는 예 |
+| `examples/gpt-hackathon/HUD_TopLeft_request.md` | 한 장짜리 UI 요청서. 교체 가능한 고리 + 초상처럼 "게임이 어떻게 조립하는지"를 규격으로 적는 예 |
+
+요청서가 가리키는 `Reference/` 이미지와 결과 PNG는 저장소에 넣지 않았음 (문서 형식만 참고).
+
+### 두 프로젝트에서 얻은 요령
+
+**NAI**
+- 화풍은 `[Base Prompts].txt` 하나에만 둠. 에셋마다 화풍 단어를 더하면 금방 톤이 갈라짐.
+- 같은 인물은 외형 줄을 모든 파일에 글자 그대로 복사함 (서 있는 그림 · 전투 · 컷인 · 치비).
+- 투명 소품은 `{{black background, simple background}}` + "isolated on a solid black background" → 스크립트가 알파 PNG로 바꿈. 소품은 한 프롬프트에 하나씩.
+- 2.5D 배경은 한 장으로 그리지 않고 뒷벽 · 중간 소품 · 앞 레이어로 나눠 뽑고, 모든 레이어에 같은 조명을 적음 (`nai-image/references/environment-2_5d.md`).
+- `Base`의 `1girl`은 남캐 · 메카 · 소품을 뽑을 때 바꾸거나 빼야 함.
+- 마음에 든 그림은 섹션 키 + 시드를 기록해 둠. 같은 시드 + 같은 JSON이면 같은 그림이 나옴.
+
+**GPT (Codex)**
+- 요청서에는 "이게 게임에서 어떻게 쓰이는지"(크기, 교체되는 부분, 재생 방식, 기준점)를 먼저 적음. 그게 그려야 할 것을 정함.
+- 목업과 분절은 반드시 따로. 분절 전에 목업의 실제 크기를 재고 조각 표를 씀.
+- 글자는 그림에 넣지 않고 게임이 그림. 상태(기본 · 호버 · 선택)는 같은 장면에서 상태만 바꿔 그리게 함.
+- 받은 조각은 직접 열어 크기 · 테두리 알파를 확인함. 납품된 README나 검증 JSON만 믿지 않음.
+
 ## 지키는 것
 
 - 토큰 · `~/.codex/auth.json`은 읽지도 출력하지도 않음.

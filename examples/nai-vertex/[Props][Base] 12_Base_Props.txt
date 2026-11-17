@@ -1,0 +1,62 @@
+# [Props][Base] 12 — 거점 소품 (NAI V5). 한 장에 소품 하나, 바닥선 곧게. 투명 PNG는 _clean.png.
+# 생성: python -I .claude/skills/vertex-nai/scripts/vertex_nai.py 12:1-A --n 2
+# 채택 기록 (2026-11-09): 원본은 _nai_out/<키>/<키>_<시드>_clean.png, 채택은 각 항목 아래 // 줄. 공통 후처리: 알파 40 초과 영역 기준으로 자름 (좌우 위 2px, 아래 0px 여유), 높이 520px 넘으면 LANCZOS로 520px.
+
+---
+
+## 1. 소품
+### 1-A. 보급 상자 더미 (1:1)
+// 채택 시드 1841864845 -> Assets/Art/Lobby/BaseCamp/Props/Prop_Crates.png
+no humans, -3::1girl, 1boy, human, character, animal::, game asset, prop, {{black background, simple background}}, single object, centered, isolated, {{flat front view}}, -3::isometric, three-quarter view, top-down view, perspective, platform, pedestal::,
+1.6::dark interior night scene, dim warm work lamp light from the upper right, cold blue shadows, muted desaturated colors, matching a dark painted anime background, worn and repaired::,
+1.7::stack of three battered olive-green steel supply crates with rope handles, stenciled blank plates, a folded blanket and a dented tin mug on top::,
+A stack of three battered olive-green steel supply crates with a folded blanket and a dented tin mug on top, standing on an invisible flat ground line, bottom edge straight, isolated on a solid black background.
+
+### 1-B. 낮은 공구 수레 (1:1)
+// 채택 시드 1067997988 -> Assets/Art/Lobby/BaseCamp/Props/Prop_Cart.png
+no humans, -3::1girl, 1boy, human, character, animal::, game asset, prop, {{black background, simple background}}, single object, centered, isolated, {{flat front view}}, -3::isometric, three-quarter view, top-down view, perspective, platform, pedestal::,
+1.6::dark interior night scene, dim warm work lamp light from the upper right, cold blue shadows, muted desaturated colors, matching a dark painted anime background, worn and repaired::,
+1.7::low rusty rolling tool cart with two shelves, wrenches, oil rags, a coil of wire and a small work lamp::,
+A low rusty rolling tool cart with two shelves holding wrenches, oil rags and a coil of wire, standing on an invisible flat ground line, bottom edge straight, isolated on a solid black background.
+
+### 1-C. 기름통 (1:1)
+// 채택 시드 2800620312 -> Assets/Art/Lobby/BaseCamp/Props/Prop_Drums.png
+no humans, -3::1girl, 1boy, human, character, animal::, game asset, prop, {{black background, simple background}}, single object, centered, isolated, {{flat front view}}, -3::isometric, three-quarter view, top-down view, perspective, platform, pedestal::,
+1.6::dark interior night scene, dim warm work lamp light from the upper right, cold blue shadows, muted desaturated colors, matching a dark painted anime background, worn and repaired::,
+1.7::two dented steel oil drums side by side, hazard stripe band, oil stains, a dirty tarp draped over one::,
+Two dented steel oil drums side by side with a dirty tarp draped over one, standing on an invisible flat ground line, bottom edge straight, isolated on a solid black background.
+
+### 1-D. 약품 수레 (1:1)
+// 채택 시드 536486097 -> Assets/Art/Lobby/BaseCamp/Props/Prop_LabCart.png
+no humans, -3::1girl, 1boy, human, character, animal::, game asset, prop, {{black background, simple background}}, single object, centered, isolated, {{flat front view}}, -3::isometric, three-quarter view, top-down view, perspective, platform, pedestal::,
+1.6::dark interior night scene, dim warm work lamp light from the upper right, cold blue shadows, muted desaturated colors, matching a dark painted anime background, worn and repaired::,
+1.7::small steel laboratory trolley cluttered with glass flasks, test tubes in a rack, a burner, stacked papers and tangled tubing::,
+A small steel laboratory trolley cluttered with glass flasks, test tubes, a burner and stacked papers, standing on an invisible flat ground line, bottom edge straight, isolated on a solid black background.
+
+### 1-E. 종이 상자 더미 (1:1)
+// 채택 시드 3906724743 -> Assets/Art/Lobby/BaseCamp/Props/Prop_Boxes.png
+no humans, -3::1girl, 1boy, human, character, animal::, game asset, prop, {{black background, simple background}}, single object, centered, isolated, {{flat front view}}, -3::isometric, three-quarter view, top-down view, perspective, platform, pedestal::,
+1.6::dark interior night scene, dim warm work lamp light from the upper right, cold blue shadows, muted desaturated colors, matching a dark painted anime background, worn and repaired::,
+1.7::messy pile of cardboard archive boxes with handwritten labels left blank, loose binders and papers spilling out::,
+A messy pile of cardboard archive boxes with loose binders and papers spilling out, standing on an invisible flat ground line, bottom edge straight, isolated on a solid black background.
+
+### 1-F. 모래주머니와 그물 상자 (1:1)
+// 미채택 (게임에 넣지 않음).
+no humans, -3::1girl, 1boy, human, character, animal::, game asset, prop, {{black background, simple background}}, single object, centered, isolated, {{flat front view}}, -3::isometric, three-quarter view, top-down view, perspective, platform, pedestal::,
+1.6::dark interior night scene, dim warm work lamp light from the upper right, cold blue shadows, muted desaturated colors, matching a dark painted anime background, worn and repaired::,
+1.7::low wall of stacked sandbags with a cargo net over metal cases beside it::,
+A low wall of stacked sandbags beside metal cases under a cargo net, standing on an invisible flat ground line, bottom edge straight, isolated on a solid black background.
+
+### 1-G. 눈 덮인 상자 (1:1)
+// 채택 시드 4066917593 -> Assets/Art/Lobby/BaseCamp/Props/Prop_SnowCrate.png
+no humans, -3::1girl, 1boy, human, character, animal::, game asset, prop, {{black background, simple background}}, single object, centered, isolated, {{flat front view}}, -3::isometric, three-quarter view, top-down view, perspective, platform, pedestal::,
+1.6::night, cold blue moonlight from above, snow piled on top, muted desaturated colors, matching a dark painted anime background::,
+1.7::snow-covered wooden crate and a small metal fuel can, a shovel leaning against the crate::,
+A snow-covered wooden crate and a small metal fuel can with a shovel leaning against it, standing on an invisible flat ground line, bottom edge straight, isolated on a solid black background.
+
+### 1-H. 드럼통 화로 (1:1)
+// 채택 시드 987894236 -> Assets/Art/Lobby/BaseCamp/Props/Prop_FireBarrel.png
+no humans, -3::1girl, 1boy, human, character, animal::, game asset, prop, {{black background, simple background}}, single object, centered, isolated, {{flat front view}}, -3::isometric, three-quarter view, top-down view, perspective, platform, pedestal::,
+1.6::night, cold blue moonlight from above, snow piled on top, muted desaturated colors, matching a dark painted anime background::,
+1.7::rusty oil drum fire barrel with glowing embers and small flames inside, holes punched in its side, snow around its base::,
+A rusty oil drum fire barrel with glowing embers inside and snow around its base, standing on an invisible flat ground line, bottom edge straight, isolated on a solid black background.

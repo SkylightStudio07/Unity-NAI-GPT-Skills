@@ -1,0 +1,167 @@
+# [Props 03] 스테이지 기믹 & 오브젝트 (Paper Cutout Props) — NAI V5 프롬프트 모음
+# 사용법: 아래 개별 프롬프트 뒤에 [Base Prompts].txt 내용을 이어 붙여 생성하세요.
+# 주의: 모든 오브젝트 프롬프트는 맨 앞에 `no humans`가 들어가며, 인물이 섞이지 않도록 네거티브나 메인에 `-3::1girl, 1boy, human, character::`를 포함했습니다.
+
+---
+
+## 1. 황혼의 문 & 태엽 톱니바퀴 (Twilight Gate & Clockwork Gear)
+### 1-A. 고풍스러운 황혼의 철문 (Gate)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, {{black background, simple background}},
+ornate tall gothic fairytale iron gate, ancient stone arch frame, intricate clockwork engravings, sun and moon relief carvings, weathered bronze and dark stone texture,
+A tall vertical fairytale iron and stone gate prop for a 2D platformer, drawn in a vintage kamishibai paper-theater style with dense pen cross-hatching, isolated on a solid black background.
+
+### 1-B. 숨겨진 황동 톱니바퀴 (Hidden Brass Gear)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, symmetrical circular object, {{black background, simple background}},
+{{ornate antique brass clockwork gear}}, steampunk fairytale cogwheel, intricate filigree spokes, engraved rings, weathered gold and bronze patina,
+A single circular antique brass clockwork gear prop viewed straight-on, drawn with intricate pen hatching and storybook etching details, isolated cleanly on a solid black background.
+
+---
+
+## 2. 신호 등불 & 작동 레버 (Signal Lantern & Lever Switch)
+### 2-A. 신호 등불 (Signal Lantern — 적색/금색 점등용)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, {{black background, simple background}},
+ornate hanging fairytale iron lantern, antique glass cage lamp, intricate wrought-iron frame, warm glowing core,
+A single antique fairytale signal lantern prop viewed straight-on, drawn in a sketchy pen-hatched storybook illustration style, isolated on a solid black background.
+
+### 2-B. 바닥 작동 레버 (Mechanical Floor Lever — 1:1)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, {{black background, simple background}}, {{flat side view}}, {{profile view}}, -3::isometric, three-quarter view, top-down view, perspective, square base seen from above::,
+antique brass and wood floor lever switch, low half-round geared stone base seen exactly from the side, long straight handle with a round wooden knob tilted to the left, fairytale clockwork mechanism,
+A single 2D platformer floor lever switch drawn completely flat in side profile like a paper-theater cutout, the base as a flat half-disc on the ground line and the handle leaning left, detailed pencil hatching in a dark fairytale style, isolated on a solid black background.
+
+---
+
+## 3. 울림돌 발판 (Echo Stone Platform — 21:9 와이드, 정면 측면도)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, horizontal composition, {{black background, simple background}}, {{flat side view}}, {{profile view}}, -3::isometric, three-quarter view, top-down view, perspective, visible top surface, square tile::,
+{{long thin floating slab of translucent crystalline stone seen exactly from the side}}, flat walkable top line, short crystal shards hanging under it, carved soundwave runes along the side face, delicate etched cracks, pale ice-blue and vintage ivory mineral,
+A single slim horizontal stone-and-crystal platform drawn completely flat like a paper-theater cutout, as wide as possible and only a little tall, for a 2D side-scroller, drawn in a vintage storybook pen-hatching style, isolated on a solid black background.
+
+---
+
+## 4. 빛의 글자 제단 (Word Altar)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, {{black background, simple background}},
+ancient fairytale stone shrine altar, carved sun and star tablet, weathered stone pedestal with intricate pen hatching, mystical engraved book stand,
+A symmetrical ancient stone altar prop for a 2D platformer, drawn in a dark fairytale kamishibai illustration style with rich cross-hatching, isolated on a solid black background.
+
+---
+
+## 5. 체크포인트 가로등 & 재회의 등불 (Checkpoint Post & Reunion Goal Lantern)
+### 5-A. 체크포인트 작은 가로등 (Checkpoint Post)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, {{black background, simple background}},
+slender wrought-iron fairytale signpost lantern, small crescent bell lamp hanging from a curved post, weathered stone base,
+A single antique wrought-iron checkpoint lamp post for a 2D side-scroller, drawn with detailed pen hatching on a solid black background.
+
+### 5-B. 재회의 큰 등불 (Reunion Goal Shrine)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, {{black background, simple background}},
+{{grand ornate twilight sanctuary lantern}}, intertwined sun and crescent moon monument, warm golden beacon inside a tall filigree iron and stone arch,
+A grand ceremonial twilight lantern monument where the Prince and Princess reunite, drawn in a rich storybook paper-theater style with intricate pen cross-hatching, isolated on a solid black background.
+
+---
+
+## 6. 말 퍼즐 소품 (Word Puzzle Props — 스테이지 2)
+### 6-A. 말풍선 패 (Speech Bubble Plaque — 3:2 가로 권장)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, {{black background, simple background}}, -3::text, letters, writing, words::,
+{{blank rounded speech bubble shaped wooden plaque}}, cream parchment face with a small pointed tail at the bottom, thin brass rim, hanging from two tiny chains, plain empty center, intricate pen cross-hatching on the rim only,
+A single blank storybook speech-bubble plaque prop with an empty face for writing, drawn in a vintage kamishibai paper-theater style, isolated on a solid black background.
+
+### 6-B. 눈부신 현판 (Glaring Hanging Sign — 3:2 가로 권장)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, {{black background, simple background}}, -3::text, letters, writing::,
+{{hanging signboard blazing with blinding white-gold light}}, ornate brass frame hanging from a single rope, the face completely washed out by glare, light rays spilling around the edges, intricate pen cross-hatching on the frame,
+A single fairytale hanging sign too bright to read, its face lost in white-gold glare, drawn in a vintage kamishibai paper-theater style, isolated on a solid black background.
+
+### 6-C. 닫힌 문 (Closed Tall Door — 2:3 세로 권장)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, vertical composition, {{black background, simple background}}, -3::text, letters, open door, archway::,
+{{tall heavy closed wooden door slab}}, iron bands and rivets, a blank brass nameplate in the upper middle, weathered planks, sepia and dark plum tones, intricate pen cross-hatching,
+A single tall closed storybook door standing flat in side view, with a blank plate for a word, drawn in a vintage kamishibai paper-theater style, isolated on a solid black background.
+
+---
+
+## 7. 메아리 소품 (Echo Props — 스테이지 3)
+### 7-A. 매달린 종 (Hanging Bell — 2:3 세로 권장)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, vertical composition, {{black background, simple background}},
+{{single antique bronze bell hanging from a short iron chain}}, flared rim, engraved sun and crescent bands, a small clapper visible inside, weathered patina, intricate pen cross-hatching, sepia and dark plum tones,
+A single fairytale hanging bell prop seen from the side, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 7-B. 메아리 스위치 (Echo Switch Post — 2:3 세로 권장)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, vertical composition, {{black background, simple background}}, -3::lantern flame, fire, text::,
+{{slender wrought-iron post topped with a round glass orb in a filigree cage}}, the orb clear and empty, small cog details at the base, thin straight pole, weathered iron and pale glass, intricate pen cross-hatching, sepia and dark plum tones,
+A single slim fairytale switch post with an empty glass orb on top, seen straight from the side, drawn in a vintage kamishibai paper-theater style, isolated on a solid black background.
+
+### 7-C. 종 걸이 들보 (Bell Gantry — 21:9 와이드, 스테이지 5 공명하는 종: 종 3개를 거는 틀, 종은 따로 그린다)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, horizontal composition, {{black background, simple background}}, -3::bell, bells, text, roof, building::,
+{{long horizontal dark timber crossbeam resting on two tall carved stone pillars at the far left and far right ends}}, three small empty iron hooks hanging under the beam spaced evenly, wide open empty space beneath the beam between the pillars, iron straps and bolts on the beam, ivy trailing from the pillar tops, weathered stone and dark wood, intricate pen cross-hatching, sepia and dark plum tones,
+A single wide fairytale bell gantry frame seen straight from the side, like a bridge-top bell rack with nothing hanging on it, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+---
+
+## 8. 빛 발판 (Light Plank — 21:9 와이드, 공주에게만 보이는 발판·빛 글자 다리)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, horizontal composition, {{black background, simple background}}, -3::wood, wooden plank, stone, text, letters::,
+{{long thin floating platform made of solid warm golden light}}, softly glowing rounded edges, faint pen hatching shimmering inside like layered paper, tiny light motes drifting off the top, translucent gold and pale peach,
+A single slim floating bar of golden light used as a magical platform in a 2D side-scroller, wide and flat, drawn in a vintage kamishibai paper-theater style with delicate pen hatching, isolated on a solid black background.
+
+---
+
+## 9. 새 1~3단계 소품 (공주의 힘, 왕자의 말)
+### 9-A. 금색 다리 판 (Gold Stretch Bridge — 21:9, 가로로 반복해 길이를 바꾼다)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, horizontal composition, {{black background, simple background}}, -3::text, letters, railing, rope::,
+{{long flat wooden bridge plank clad in warm burnished gold leaf}}, simple straight beam seen from the side, engraved sun and vine filigree along its edge, small rivets, the same pattern repeating evenly from end to end, faint golden shimmer, intricate pen cross-hatching, sepia and warm gold tones,
+A single long golden bridge beam that can magically stretch, seen straight from the side, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-B. 금색 기둥 (Gold Stretch Pillar — 9:21, 세로로 반복해 높이를 바꾼다)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, vertical composition, {{black background, simple background}}, -3::text, letters, statue, capital, base::,
+{{tall square pillar clad in warm burnished gold}}, flat top you can stand on, engraved spiral vine and sun filigree repeating evenly from top to bottom, small rivets on the edges, faint golden shimmer, intricate pen cross-hatching, sepia and warm gold tones,
+A single tall golden pillar that can magically grow or shrink, seen straight from the side, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-C. 금색 통나무 (Gold-Banded Log — 21:9, 가로로 반복)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, horizontal composition, {{black background, simple background}}, -3::text, letters, leaves, branches::,
+{{long straight tree log lying on its side wrapped with shining gold bands}}, rough bark with gold leaf glinting in the cracks, gold rings repeating evenly along its length, flat ends, intricate pen cross-hatching, sepia, brown and warm gold tones,
+A single long log bound in magical gold bands, seen straight from the side, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-D. 무거운 나무 상자 (Heavy Wooden Crate — 1:1)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, square composition, {{black background, simple background}}, -3::text, letters, lid open, contents::,
+{{sturdy square wooden crate with iron corner brackets}}, thick planks, heavy rivets, worn edges, a small crescent and sun branded on the side, seen straight from the front, intricate pen cross-hatching, sepia and dark plum tones,
+A single heavy wooden crate that only a strong princess can push, seen straight from the front, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-E. 압력판 (Pressure Plate — 21:9, 얇은 판)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, horizontal composition, {{black background, simple background}}, -3::text, letters::,
+{{flat low stone pressure plate set into the ground}}, a thin carved slab with a sun-and-moon rune in the middle, bronze rim, slightly raised, seen straight from the side and a little from above, intricate pen cross-hatching, sepia and weathered stone tones,
+A single old stone pressure plate that opens a gate when weighed down, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-F. 철문 (Iron Bar Gate — 9:21, 좁고 높은 창살문)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, vertical composition, {{black background, simple background}}, -3::text, letters, wall, castle::,
+{{narrow tall iron portcullis gate of vertical bars with pointed tips}}, cross bars and rivets, a small sun emblem in the middle, rusted dark iron, seen straight from the front, intricate pen cross-hatching, sepia and dark iron tones,
+A single narrow iron bar gate that rises when a pressure plate is weighed down, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-G. 떠 있는 금색 돌 (Floating Gold Stone — 2:1, 4단계 '무거워져')
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, horizontal composition, {{black background, simple background}}, -3::text, letters, chains, rope::,
+{{wide flat rectangular block of rough stone veined and banded with shining gold}}, flat top and flat bottom, chiselled square edges, small gold sun rune on its face, faint magical golden shimmer, intricate pen cross-hatching, sepia, grey stone and warm gold tones,
+A single heavy golden stone block that floats until it is told to become heavy, seen straight from the side, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-H. 가시 바닥 (Floor Spikes — 21:9, 가로로 반복)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, horizontal composition, {{black background, simple background}}, -3::text, letters, blood, skull::,
+{{a low row of sharp rusted iron spikes standing upright on a thin iron strip}}, even identical spikes repeating from end to end, dark red rust on the tips, seen straight from the side, intricate pen cross-hatching, sepia, dark iron and dull red tones,
+A single strip of cruel floor spikes in a dark cave, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-I. 달 표지판 (Moon Picture Signpost — 2:3 세로, 공주에게만 보이는 그림)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, vertical composition, {{black background, simple background}}, -3::text, letters, words, arrow::,
+{{small square wooden signboard on a single wooden post with a crescent moon picture painted on it}}, the crescent drawn in pale gold, weathered planks, iron nails, seen straight from the front, intricate pen cross-hatching, sepia and pale gold tones,
+A single old signpost showing only a crescent moon picture, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-J. 해 그림 (Sun Emblem — 1:1)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, square composition, {{black background, simple background}}, -3::text, letters, face, disc, round frame, medallion::,
+{{a small round sun emblem with a few bold triangular rays painted in pale gold}}, flat symbol, seen straight from the front, intricate pen cross-hatching, sepia and pale gold tones,
+A single sun symbol, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-K. 달 그림 (Crescent Moon Emblem — 1:1)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, square composition, {{black background, simple background}}, -3::text, letters, face, stars::,
+{{a small crescent moon emblem painted in pale gold}}, flat symbol, seen straight from the front, intricate pen cross-hatching, sepia and pale gold tones,
+A single crescent moon symbol, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-L. 별 그림 (Star Emblem — 1:1)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, square composition, {{black background, simple background}}, -3::text, letters, face, moon, circle, disc, round frame, medallion::,
+{{a single large five-pointed star shape painted in pale gold filling the frame}}, flat symbol, just the star outline and nothing around it, seen straight from the front, intricate pen cross-hatching, sepia and pale gold tones,
+A single five-pointed star symbol, drawn in a vintage kamishibai paper-theater style with dense pen hatching, isolated on a solid black background.
+
+### 9-M. 숨은 발판 (Hidden Plank — 21:9, 왕자에게만 보이는 낡은 나무 발판, 가로 반복)
+no humans, -3::1girl, 1boy, human::, game asset, paper cutout prop, horizontal composition, {{black background, simple background}}, -3::text, letters, glass, crystal, metal frame, neon, glow outline, sci-fi::,
+{{a single long thin weathered wooden plank seen from the side}}, old grey wood grain, a few iron nails, frayed rope wrapped at both ends, tiny moss tufts, faint ghostly pale ink wash as if half drawn, the same plank texture from end to end, intricate pen cross-hatching, sepia, pale grey and faded silver tones,
+A single long thin old wooden plank that only the blind prince can sense, drawn half-faded like a ghostly pencil sketch in a vintage kamishibai paper-theater style, isolated on a solid black background.
