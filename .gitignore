@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+_nai_out/
+_codex_*.txt
+.env
+NAI_API_KEY
+auth.json
