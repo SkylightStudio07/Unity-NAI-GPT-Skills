@@ -1,11 +1,13 @@
 # Unity NAI · GPT Skills
 
-Claude Code에서 게임 아트를 뽑을 때 쓰는 공용 스킬 두 개. 프로젝트에 묶이지 않게 일반화해 둠.
+Claude Code에서 게임 아트를 뽑고 게임 안에서 확인할 때 쓰는 공용 스킬 네 개. 프로젝트에 묶이지 않게 일반화해 둠.
 
 | 스킬 | 하는 일 |
 |---|---|
 | `nai-image` | NovelAI Diffusion V5로 일러스트 · 배경 · 소품 · 스프라이트 생성. 투명 PNG, 캐릭터별 캡션, 타일링 지원 |
 | `codex-art-request` | 로컬 Codex 앱(GPT 이미지)으로 UI · VFX · 스프라이트를 목업 → 분절 두 단계로 받아 옴 |
+| `fx-sheet` | 캐릭터 공격 프레임에 맞물리는 연속 프레임 이펙트 시트(휘두르기 궤적 · 타격 섬광 · 먼지 · 피탄)를 Codex로 그려 게임용으로 자름 |
+| `unity-play-record` | Unity 플레이 모드에서 한 장면(대기 · 공격 · 이펙트)을 30fps로 녹화해 mp4로 만듦. 이미지를 읽지 않아 하이쿠에게 맡길 수 있음 |
 
 ## 이 스킬로 만든 것
 
@@ -43,6 +45,19 @@ AI 게임 해커톤 출품작. 2D 플랫포머 퍼즐. **게임 안의 그림은
 |---|---|
 | ![목업](showcase/vertex/operation_status_mockup.jpg) | ![게임](showcase/vertex/operation_status_ingame.jpg) |
 
+**전투 이펙트 시트** (`fx-sheet`, 요청서는 `examples/gpt-vertex/FxSheet/`)
+
+캐릭터의 실제 공격 프레임을 같은 격자에 깐 가이드를 같이 보내면, Codex가 무기 끝을 따라가는 12프레임 이펙트를 그림. 앞 몇 장은 공격 시트와 1:1로, 뒤의 먼지 · 잔상은 절반 속도로 재생해서 "식 하고 사라지는" 느낌이 없어짐.
+
+| 방망이 내려치기 (가이드 위에 겹쳐 본 것) | 게임 화면 |
+|---|---|
+| ![방망이](showcase/vertex/fx_bandit_guide_overlay.jpg) | ![게임](showcase/vertex/fx_bandit_ingame.jpg) |
+| ![결정 발톱](showcase/vertex/fx_guardian_guide_overlay.jpg) | ![물어뜯기](showcase/vertex/fx_hund_guide_overlay.jpg) |
+
+공용 피탄 이펙트 (사격 적 7종이 같이 씀, 흰색으로 그리고 게임에서 색을 곱함)
+
+![피탄](showcase/vertex/fx_gunshot_sheet.jpg)
+
 **VFX 목업** (총구 섬광, 요청서는 `examples/gpt-vertex/MuzzleFlash/`)
 
 | 전투 장면 목업 | 섬광 변형 |
@@ -56,10 +71,11 @@ AI 게임 해커톤 출품작. 2D 플랫포머 퍼즐. **게임 안의 그림은
      ```
      git clone https://github.com/SkylightStudio07/Unity-NAI-GPT-Skills.git "%USERPROFILE%\.claude\skills"
      ```
-   - 이미 다른 스킬이 있으면 아무 데나 clone한 뒤 `nai-image`, `codex-art-request` 폴더만 `~/.claude/skills/`로 복사함.
+   - 이미 다른 스킬이 있으면 아무 데나 clone한 뒤 `nai-image`, `codex-art-request`, `fx-sheet`, `unity-play-record` 폴더만 `~/.claude/skills/`로 복사함.
    - 한 프로젝트에서만 쓸 거면 그 프로젝트의 `.claude/skills/`에 넣어도 됨.
-2. Python 3와 Pillow 설치: `pip install pillow`
-3. Claude Code를 다시 열면 스킬 목록에 두 개가 보임.
+2. Python 3와 Pillow 설치: `pip install pillow` (`fx-sheet`는 numpy도: `pip install numpy`)
+3. `unity-play-record`는 Unity CLI(`unity command`)가 열린 Editor에 연결돼 있어야 하고, Git Bash에서 실행함.
+4. Claude Code를 다시 열면 스킬 목록에 네 개가 보임.
 
 ## 인증 (저장소에 절대 넣지 않음)
 
@@ -96,6 +112,8 @@ AI 게임 해커톤 출품작. 2D 플랫포머 퍼즐. **게임 안의 그림은
 | `examples/gpt-vertex/UI_Mockup_Split_Workflow.md` | 목업 → 분절 방식의 원본 문서 (`codex-art-request/references/workflow.md`는 이걸 일반화한 것) |
 | `examples/gpt-vertex/OperationStatus/` | UI 화면 하나의 `REQUEST.md` + `SPLIT_REQUEST.md` 짝 |
 | `examples/gpt-vertex/MuzzleFlash/` | VFX(총구 섬광 · 연기)의 `REQUEST.md` + `SPLIT_REQUEST.md` 짝. 게임에서 어떻게 재생되는지부터 적는 예 |
+| `examples/gpt-vertex/FxSheet/` | 연속 프레임 이펙트 요청서 넷: 방망이 휘두르기(근접 무기), 결정 발톱(세 줄 궤적 + 파편), 돌진 물기, 공용 피탄. 가이드 읽는 법 · 칸별 표 · 재생 방식 쓰는 예 |
+| `examples/vertex-play-record/battle_scenario.cs` | `unity-play-record`용 시나리오 완성 예: 조우 에셋으로 전투 시작 → 대기 녹화 → 적이 공격할 때까지 턴 넘김 → 공격 녹화 |
 | `examples/gpt-hackathon/HUD_TopLeft_request.md` | 한 장짜리 UI 요청서. 교체 가능한 고리 + 초상처럼 "게임이 어떻게 조립하는지"를 규격으로 적는 예 |
 
 요청서가 가리키는 `Reference/` 이미지와 결과 PNG는 저장소에 넣지 않았음 (문서 형식만 참고).
@@ -115,6 +133,11 @@ AI 게임 해커톤 출품작. 2D 플랫포머 퍼즐. **게임 안의 그림은
 - 목업과 분절은 반드시 따로. 분절 전에 목업의 실제 크기를 재고 조각 표를 씀.
 - 글자는 그림에 넣지 않고 게임이 그림. 상태(기본 · 호버 · 선택)는 같은 장면에서 상태만 바꿔 그리게 함.
 - 받은 조각은 직접 열어 크기 · 테두리 알파를 확인함. 납품된 README나 검증 JSON만 믿지 않음.
+- 연속 프레임 이펙트는 캐릭터 공격 프레임을 깐 가이드를 같이 보내면 위치가 맞게 나옴. 게임에서 어긋나 보이면 그림보다 배치 사각형(`preserveAspect` 이미지는 상자보다 작게 그려짐)을 먼저 의심함.
+- 이미지 모델은 사라지는 꼬리 프레임을 너무 어둡게 그림. 자를 때 뒤쪽 프레임 밝기를 올림 (`fx-sheet/scripts/cut_fx.py --gain`).
+
+**게임 안 확인**
+- 녹화 · 영상 변환은 토큰을 거의 안 씀. 이미지를 열어 보는 게 비쌈. 녹화는 하이쿠에게 스크립트 한 줄로 맡기고, 메인 세션은 영상만 사용자에게 전달함.
 
 ## 지키는 것
 
